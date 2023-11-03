@@ -1,0 +1,564 @@
+
+
+:root {
+    --linearblue-color: #837BE3 ;
+   --white-color: #FFFFFF ;
+   --orange-color: #F26E00 ;
+   --solidblue-color: #083AB9 ;
+   --grey-color: #CFCDCD ;
+   --appblue-color: #0F2660 ;
+   --red-color: #BF2626 ;
+   --black-color: #000000 ;
+}  
+
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+}  
+.fa-twitter {  
+    background: #55ACEE;  
+    color: white;  
+  }  
+  .fa-linkedin {  
+    background: #007bb5;  
+    color: white;  
+  }  
+  .fa-instagram {  
+    background: #125688;  
+    color: white;  
+  }  
+ 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+
+.wrapper {
+	max-width: 1480px;
+	margin:0 auto;
+}
+
+
+
+
+
+.btn {
+  padding: 18px 32px;
+  border-radius: 24px;
+  color: #ffff;
+  display: inline-block;
+  font-weight: 30;
+  font-size: 16px;
+  text-decoration: none;
+  left: 80px;
+  margin-left: 40px;
+}
+
+.btn.dark {
+  background: var(--black-color) ;
+}
+
+.btn.light {
+  background: var(--orange-color)
+}
+
+/* header */
+
+header {
+  background: linear-gradient(253deg, #837BE3 -0.31%, #090250 100.93%, rgba(9, 1, 107, 0.00) 100.93%);
+  height: 100vh;
+  width: 100%;
+  padding: 30px 0;
+}
+
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 1400px;
+  top: 0;
+  padding: 36px 0;
+  z-index: 100;
+  transition: 500ms ease;
+  left: 70px;
+}
+
+nav.scrolled {
+  background: var(--black-color);
+  box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.32);
+  border-radius: 0 0 8px 8px;
+  top: 0;
+  padding: 12px;
+}
+
+nav .logo {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 5.12px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 80px ; 
+  list-style: none;
+  margin-top: 0px;
+  }
+
+nav ul li a {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  height: 100;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.hero-section .left h1 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 250px;
+  margin-left: 40px;
+} 
+
+.hero-section .left p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.44px;
+  margin-bottom: 50px;
+  width: 800px;
+  margin-left: 40px;
+}
+
+.hero-section left {
+  flex: 1;
+}
+
+.hero-section .right {
+  align-self: flex-end;
+}
+
+.hero-section .right img {
+  height: 380px;
+  vertical-align: 150px;
+}
+
+
+/* Achievement cards */
+
+.achievement-card {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  height: fit-content;
+}
+
+
+
+.achievement-card .content {
+  border-radius: 40px;
+  background: #fff;
+  padding: 8px 32px;
+  z-index: 10;
+  position: relative;
+}
+
+.achievement-card.students-enrolled {
+  left: 36%;
+  top: 220px;
+}
+
+.achievement-card.overall-rating {
+  left: 45%;
+  top:  500px;
+  height: 350px;
+  width: 350px;
+}
+
+.achievement-card .content div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.achievement-cards h3 {
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 300px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  color: var(--dark blue--)
+}
+
+.achievement-card p {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 70;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--dark blue--)
+}
+
+.achievement-card .bg {
+  position: absolute;
+  height: 155px;
+  width: 100%;
+  box-shadow: 10px 5px 5px 5px #FEFEFE30;
+  border-radius: 40px;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+/* Testimonials Section */
+section {
+  margin-top: 100px;
+}
+
+
+h2{
+  font-family: Inter;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 100px;
+  margin: 0;
+  color: var(--appblue-color)
+}
+
+h2.light {
+  color: #FFF;
+}
+
+section p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+  color: var(--appblue-color);
+  margin: 10px 0;
+}
+
+.testimonials-section {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+}
+
+.testimonials-section .testimonial-card {
+  width: 500px;
+  box-shadow: 10px 30px 20px 0px rgba(255, 68, 0, 0.785);
+  margin-bottom: 50px;
+  border-radius: 24px;
+  background-color: #F3F2F2;
+  position: relative;
+  left: 70px;
+}
+
+.testimonials-section .testimonial-card::before {
+  content: "";
+  width: 30px;
+  position: absolute;
+  height: 40px;
+  top: -40px;
+  left: 70px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--black-color)
+}
+
+.testimonials-section .testimonial-card:last-child::before {
+  border-radius: 0 0 10px 10px;
+  height: calc(100% + 90px) ;
+  z-index: -1;
+}
+
+.testimonials-section .testimonial-card .content {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 900px;
+  color: white;
+  border-radius: 24px;
+  padding: 24px 32px;
+  box-shadow: 10px 30px 20px 0px #083ab9bf;
+  background-color: #1803fb;
+}
+
+.testimonials-section .testimonial-card:last-child .content {
+  box-shadow: 10px 30px 20px 0px rgba(255, 68, 0, 0.805);
+  background-color: rgb(255, 68, 0);
+}
+
+.testimonials-section .testimonial-card .info h4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.testimonials-section .testimonial-card .info {
+  padding: 24px 32px;
+}
+
+.testimonials-section .testimonial-card .info p.company {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.testimonials-section .testimonial-card img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 32px;
+  bottom: 20px;
+}
+
+.testimonials-section .features {
+  margin-bottom: 40px;
+}
+
+
+/* Courses Section */
+
+.courses-section {
+  background: linear-gradient(253deg, #837BE3 -0.31%, #090250 100.93%, rgba(9, 1, 107, 0.00) 100.93%);
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  width: 1500px;
+  padding: 80px 200px;
+  margin-top: 100px;
+}
+
+
+.courses-section h2 {
+  text-align: center;
+}
+
+
+.courses-section .course-cards {
+  display: flex;
+  gap: 150px;
+}
+
+.courses-section .course-cards img {
+  width: 100%;
+  border-radius: 60px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.courses-section .course-card {
+  background-color: #FFF;
+  border-radius: 16px;
+  padding: 0px 30px;
+  margin: 40px 0px;
+  height: 350px;
+}
+
+.course-cards .course-card h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 40.023%; 
+}
+
+.course-cards .course-card p {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 40.023%; 
+}
+
+.courses-section .course-card .info {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses-section .course-card .duration {
+  color: rgba(0, 0, 0, 0.82);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 35.023%; 
+}
+
+.courses-section {
+  position: relative;
+}
+
+.courses-section .btn {
+  position: absolute;
+  right: 180px;
+  left: auto;
+  size: 10px;
+}
+
+/* App Section */
+
+.app-section {
+  text-align: center;
+  color: #0F2660;
+  font-family: Passion One;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 1200;
+  line-height: normal;
+}
+
+.app-section .app-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 28px;
+}
+
+.app-section .app-btn {
+  border-radius: 20px;
+  background: #000;
+  width: 250px;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-section .app-btn span {
+  color: #FFF;
+  font-family: Passion One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Footer */
+
+footer {
+  background: #0A0918;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 1500px;
+  padding: 80px 100px;
+  margin-top: 80px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer h3 {
+  color: var(--orange-color);
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+footer ul li {
+  margin: 16px 0;
+}
+
+footer .links-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .links a {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0px 8px;
+}
+
+footer .links .action {
+  padding: 16px;
+  bottom: 5px;
+}
+
+footer form .action {
+  margin-left: 20px;
+  margin-top: 16px;
+  gap: 2px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer form .email-address-btn {
+  position: absolute;
+  background: #D9D9D9;
+  width: 130px;
+  height: 50px;
+  color: #111010;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 145.023%; 
+  letter-spacing: 0.48px;
+}
+
+
+footer form .submit-btn {
+  position: absolute;
+  background: #1A114F;
+  width: 130px;
+  height: 50px;
+  right: 420px;
+  flex-shrink: 0;
+  color: rgba(242, 242, 242, 0.76);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 145.023%; 
+  letter-spacing: 0.48px;
+}
